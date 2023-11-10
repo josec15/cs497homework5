@@ -17,4 +17,10 @@ Space complexity = O(2^n * n), since we create a visited set and queue.
 ## Question 4
 We can solve this using a recursive depth first search that traverses a binary tree. Recursively calculate the max path sum of the left and right sides of the tree. We also need to add the root value to the left and right max sums and update the result.
 Time complexity = O(n), n being the number of nodes in the tree
-Space complexity = O(1), no extra space is used.
+Space complexity = O(1), no extra space is being used.
+
+## Question 5
+First we initialize result as an empty list to store the result and the current variable initialized to 1.
+Use a for loop to iterate n times and for each iteration we want to append the current number to the result. We check if the current number multiplied by 10 is less than or equal to n, if so then we set the current to that number. If the number is greater than n we add 1 to the current number. To get rid of any trailing zeroes we want to check if the mod of the current number is equal to 0.
+Time complexity = O(n), n is the number of times the for loop is iterated
+Space complexity = O(1), no extra space is being used.
